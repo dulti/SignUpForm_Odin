@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Japanese-3017';
+    src: url('./res/Japanese-3017.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#background {
+    background-image: url('./img/pattern-g2fe7a49cf_640.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding-top: 20vh;
+    width: max(100vw, 250px);
+    height: 80vh;
+}
+
+#logo {
+    position: relative;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 3vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo svg {
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, 0);
+    height: 14vh;
+    width: auto;
+    margin-right: 2vw;
+}
+
+#logo p {
+    position: absolute;
+    float:left;
+    font-family: 'Japanese-3017', serif;
+    font-size: calc(14vh / 2);
+    line-height: 0.7em;
+    margin-left: 2vw;
+    color: white;
+    right: 30%;
+    transform: translate(50%, 0);
+}
+
+.main-screen {
+    background-color: #DAF3FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.general {
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.general p {
+    font-size: 24px;
+}
+
+.form {
+    background-color: #6A3D00;
+    box-shadow: 0 10px 20px -2px 422702;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px 50px;
+}
